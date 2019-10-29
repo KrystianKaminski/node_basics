@@ -1,3 +1,5 @@
-module.exports = () => {
-  console.log("Hello");
+module.exports = {
+  f1: () => {
+    console.log("Hello");
+  }
 };
