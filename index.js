@@ -1,1 +1,6 @@
-console.log(Math.random());
+// WRAPPING, IIFE
+
+// (function (exports, require, module, __filename, __dirname) {
+console.log(arguments);
+// return ...
+// })()
