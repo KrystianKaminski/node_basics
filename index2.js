@@ -1,1 +1,1 @@
-console.log(exports);
+require("./index.js");
