@@ -1,14 +1,13 @@
-const http = require("http");
+const express = require("express");
 
-const server = http.createServer();
+const server = express();
 
-// events
+server.get("/", (req, res) => {
+  res.send({ message: "Hello Express" });
+});
 
-server.on("request", (req, res) => {
-  // do
-  console.log("Request!!!");
-  res.write("Hello HTTP");
-  res.end();
+server.get("/favicon.*", (req, res) => {
+  res.sendFile("./favicon....");
 });
 
 server.listen(3000);
